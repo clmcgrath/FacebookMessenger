@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CefSharp;
+using CefSharp.Wpf;
 
 namespace FacebookMessenger
 {
@@ -20,9 +23,21 @@ namespace FacebookMessenger
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+      
+        public MainWindow(ISettings settings)
         {
+
+
             InitializeComponent();
+            Browser.DownloadHandler = new Downloader();
+            Browser.MenuHandler = new DeveloperContextMenuHandler(settings);
+            //Browser.Address = "https://www.mesenger.com/login";
+            
+            Browser.Load("http://www.messenger.com/t/");
+
         }
+
     }
+
+    
 }
