@@ -83,12 +83,7 @@ namespace FacebookMessenger
             return settings;
         }
 
-        protected override void OnExit(ExitEventArgs e)
-        {
-            TrayIcon?.Icon?.Dispose();
-            TrayIcon?.Dispose();
-            base.OnExit(e);
-        }
+
 
         protected static void CefInit()
         {
@@ -105,8 +100,21 @@ namespace FacebookMessenger
 
             //BUG: disable frme scheduling to fix blank frame bugs in cefsharp 
             settings.CefCommandLineArgs.Remove("enable-begin-frame-scheduling");
+            settings.CefCommandLineArgs.Add("enable-media-stream", "1");
+            Version version =  Environment.OSVersion.Version;
+            Cef.EnableHighDPISupport();
+            
             Cef.Initialize(settings);
+        
         }
+
+        ~App()
+        {
+            TrayIcon?.Icon?.Dispose();
+            TrayIcon?.Dispose();
+        }
+
+
 
 
     }
