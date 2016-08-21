@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookMessenger", "FacebookMessenger\FacebookMessenger.csproj", "{2BB17DAF-A5EC-4F55-9411-7CCB5F4FEA1A}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FacebookMessenger.Setup.x86", "FacebookMessenger.Setup.Bootstrap\FacebookMessenger.Setup.x86.wixproj", "{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FacebookMessenger.Setup", "FacebookMessenger.Setup\FacebookMessenger.Setup.wixproj", "{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,22 @@ Global
 		{2BB17DAF-A5EC-4F55-9411-7CCB5F4FEA1A}.Release|x64.Build.0 = Release|x64
 		{2BB17DAF-A5EC-4F55-9411-7CCB5F4FEA1A}.Release|x86.ActiveCfg = Release|x86
 		{2BB17DAF-A5EC-4F55-9411-7CCB5F4FEA1A}.Release|x86.Build.0 = Release|x86
+		{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}.Debug|x64.ActiveCfg = Debug|x86
+		{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}.Debug|x86.ActiveCfg = Debug|x86
+		{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}.Debug|x86.Build.0 = Debug|x86
+		{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}.Release|Any CPU.ActiveCfg = Release|x86
+		{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}.Release|x64.ActiveCfg = Release|x86
+		{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}.Release|x86.ActiveCfg = Release|x86
+		{D19190C6-D8AA-4A94-AF60-0AB97558FCC5}.Release|x86.Build.0 = Release|x86
+		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Debug|x64.ActiveCfg = Debug|x86
+		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Debug|x86.ActiveCfg = Debug|x86
+		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Debug|x86.Build.0 = Debug|x86
+		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Release|Any CPU.ActiveCfg = Release|x86
+		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Release|x64.ActiveCfg = Release|x86
+		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Release|x86.ActiveCfg = Release|x86
+		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
