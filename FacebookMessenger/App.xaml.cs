@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
+using System.Windows.Media;
 using CefSharp;
+using MaterialDesignColors;
+using MaterialDesignThemes.Wpf;
 using Newtonsoft.Json;
 using Application = System.Windows.Application;
+using Color = System.Drawing.Color;
 
 namespace FacebookMessenger
 {
@@ -27,12 +30,13 @@ namespace FacebookMessenger
         public static string AppDataPath { get; set; } =
             Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                 AppDataFolderName);
-
+        
 
         protected override void OnStartup(StartupEventArgs e)
         {
             
-
+            //PaletteHelper ph = new PaletteHelper();
+            //ph.ReplacePrimaryColor(new Swatch("white", new List<Hue>() {new Hue("light", System.Windows.Media.Color.FromRgb(255, 255, 255) , System.Windows.Media.Color.FromRgb(0,0, 0)) }, new List<Hue>() { new Hue("light", System.Windows.Media.Color.FromRgb(255, 255, 255), System.Windows.Media.Color.FromRgb(0, 0, 0)) }));
             Settings = CreateConfigIfNotExists(new AppSettings());
 
             CefInit();
@@ -98,7 +102,7 @@ namespace FacebookMessenger
 
             settings.SetOffScreenRenderingBestPerformanceArgs();
 
-            //BUG: disable frme scheduling to fix blank frame bugs in cefsharp 
+            //BUG: disable frame scheduling to fix blank frame bugs in cefsharp 
             settings.CefCommandLineArgs.Remove("enable-begin-frame-scheduling");
             settings.CefCommandLineArgs.Add("enable-media-stream", "1");
             Version version =  Environment.OSVersion.Version;
