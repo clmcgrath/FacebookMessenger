@@ -27,7 +27,7 @@
 
 
             </ResourceDictionary.MergedDictionaries>
-
+            
             <!-- MahApps Brushes -->
             <SolidColorBrush x:Key="HighlightBrush" Color="{DynamicResource Primary700}"/>
             <SolidColorBrush x:Key="AccentColorBrush" Color="{DynamicResource Primary500}"/>
@@ -44,6 +44,16 @@
             <SolidColorBrush x:Key="RightArrowFill" Color="{DynamicResource Primary500}"/>
             <SolidColorBrush x:Key="IdealForegroundColorBrush" Color="{DynamicResource Primary500Foreground}"/>
             <SolidColorBrush x:Key="IdealForegroundDisabledBrush" Color="{DynamicResource Primary500}" Opacity="0.4"/>
+            <FontFamily x:Key="OpenSansBold">Resources/Fonts/#Open Sans Bold</FontFamily>
+            <FontFamily x:Key="OpenSansBoldItalic">Resources/Fonts/#Open Sans Bold Italic</FontFamily>
+            <FontFamily x:Key="OpenSansExtraBold">Resources/Fonts/#Open Sans Extra Bold</FontFamily>
+            <FontFamily x:Key="OpenSansExtraBoldItalic">Resources/Fonts/#Open Sans Extra Bold Italic</FontFamily>
+            <FontFamily x:Key="OpenSansItalic">Resources/Fonts/#Open Sans Italic</FontFamily>
+            <FontFamily x:Key="OpenSansLightItalic">Resources/Fonts/#Open Sans Light Italic</FontFamily>
+            <FontFamily x:Key="OpenSansLight">Resources/Fonts/#Open Sans Light</FontFamily>
+            <FontFamily x:Key="OpenSansRegular">Resources/Fonts/#Open Sans Regular</FontFamily>
+            <FontFamily x:Key="OpenSansSemibold">Resources/Fonts/#Open Sans Semibold</FontFamily>
+            <FontFamily x:Key="OpenSansSemiboldItalic">Resources/Fonts/#Open Sans Semibold Italic</FontFamily>
 
         </ResourceDictionary>
     </Application.Resources>
