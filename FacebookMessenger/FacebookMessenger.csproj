@@ -261,7 +261,7 @@
     <Resource Include="Resources\messenger.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Scripts\notifications-service.js" />
+    <Content Include="Resources\Scripts\notifications-polyfill.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\cef.redist.x64.3.2704.1432\build\cef.redist.x64.targets" Condition="Exists('..\packages\cef.redist.x64.3.2704.1432\build\cef.redist.x64.targets')" />
