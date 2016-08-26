@@ -9,6 +9,8 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FacebookMessenger.Setup.x86
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FacebookMessenger.Setup", "FacebookMessenger.Setup\FacebookMessenger.Setup.wixproj", "{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookMessenger.Installer", "FacebookMessenger.Installer\FacebookMessenger.Installer.csproj", "{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,18 @@ Global
 		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Release|x64.ActiveCfg = Release|x86
 		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Release|x86.ActiveCfg = Release|x86
 		{E9462CB6-24E1-4178-B71B-ACF82B9D9AA2}.Release|x86.Build.0 = Release|x86
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Debug|x64.Build.0 = Debug|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Debug|x86.Build.0 = Debug|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Release|x64.ActiveCfg = Release|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Release|x64.Build.0 = Release|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Release|x86.ActiveCfg = Release|Any CPU
+		{FA2FE530-F372-4FEF-B8D6-7B336134CC4D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
