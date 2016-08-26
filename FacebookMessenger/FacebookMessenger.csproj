@@ -152,7 +152,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppSettings.cs" />
-    <Compile Include="GlobalCommands.cs" />
     <Compile Include="ITrayIcon.cs" />
     <Compile Include="CustomPopup.xaml.cs">
       <DependentUpon>CustomPopup.xaml</DependentUpon>

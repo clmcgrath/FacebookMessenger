@@ -44,6 +44,13 @@ namespace FacebookMessenger
 
     public class OpenSettingsCommand : ICommand
     {
+        private readonly Window _window;
+
+        public OpenSettingsCommand(Window window, ISettingsService settings)
+        {
+            _window = window;
+        }
+
         public bool CanExecute(object parameter)
         {
             return true;
@@ -55,5 +62,12 @@ namespace FacebookMessenger
         }
 
         public event EventHandler CanExecuteChanged;
+    }
+
+    public interface ISettingsService
+    {
+        ISettings Load();
+        void Save();
+        void Save(string path);
     }
 }
