@@ -31,13 +31,21 @@
     </WixExtension>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Packages" />
+    <Folder Include="Deploy" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Packages\install_flash_player_22_ppapi.exe" />
-    <Content Include="Packages\DotNet46_Web.exe" />
-    <Content Include="Packages\vc_redist.x64.exe" />
-    <Content Include="Packages\vc_redist.x86.exe" />
+    <Content Include="Deploy\install_flash_player_22_ppapi.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Deploy\DotNet46.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Deploy\vc_redist.x64.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Deploy\vc_redist.x86.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--

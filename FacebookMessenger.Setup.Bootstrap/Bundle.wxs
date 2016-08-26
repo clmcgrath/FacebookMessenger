@@ -24,14 +24,14 @@
 
     <PackageGroup Id="PEPPERFLASH22">
       <ExePackage  Id="PEPPERFLASH22PKG"
-                   SourceFile=".\Packages\install_flash_player_22_ppapi.exe"
+                   SourceFile=".\Deploy\install_flash_player_22_ppapi.exe"
                    InstallCondition="Installed OR PEPPER_FLASH_VERSION"
                   />
     </PackageGroup>
   </Fragment>
   <Fragment>
     <PackageGroup  Id="DOTNET46">
-      <ExePackage InstallCondition="Installed OR WIX_IS_NETFRAMEWORK_461_OR_LATER_INSTALLED" SourceFile=".\Packages\DotNet46_Web.exe"/>
+      <ExePackage InstallCondition="Installed OR WIX_IS_NETFRAMEWORK_461_OR_LATER_INSTALLED" SourceFile=".\Deploy\DotNet46.exe"/>
     </PackageGroup>
   </Fragment>
   <Fragment>
@@ -51,8 +51,8 @@
                       Type="raw" />
     </Property>
     <PackageGroup Id="VCREDIST">
-      <ExePackage SourceFile=".\Packages\vc_redist.x86.exe" InstallCondition="Installed OR VCREDIST64_INSTALLED OR VCREDIST_INSTALLED"/>
-      <ExePackage SourceFile=".\Packages\vc_redist.x64.exe" InstallCondition="Installed OR VCREDIST64_INSTALLED OR VCREDIST_INSTALLED"/>
+      <ExePackage SourceFile=".\binaries\vc_redist.x86.exe" InstallCondition="Installed OR VCREDIST64_INSTALLED OR VCREDIST_INSTALLED"/>
+      <ExePackage SourceFile=".\binaries\vc_redist.x64.exe" InstallCondition="Installed OR VCREDIST64_INSTALLED OR VCREDIST_INSTALLED"/>
     </PackageGroup>
   </Fragment>
 </Wix>
