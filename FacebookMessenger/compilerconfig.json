@@ -1,0 +1,6 @@
+﻿[
+  {
+    "outputFile": "Resources/Scripts/notifications-polyfill.js",
+    "inputFile": "Resources/Scripts/notifications-polyfill.coffee"
+  }
+]

@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
+using CefSharp;
 using CefSharp.Wpf;
 using MahApps.Metro.Controls;
 
@@ -20,13 +21,21 @@ namespace FacebookMessenger
             InitializeComponent();
             Browser.DownloadHandler = new Downloader();
             Browser.MenuHandler = new DeveloperContextMenuHandler(settings);
-            //Browser.Address = "https://www.mesenger.com/login";
             Browser.LifeSpanHandler = new LifespanHandler(settings);
-            Browser.Load("http://www.messenger.com/t/");
 
+            
+
+            Browser.Load("http://www.messenger.com/t/");
+            Browser.Loaded += BrowserOnLoaded;
            // Browser.SetZoomLevel(100);
             SizeChanged += OnSizeChanged;
             
+        }
+
+        private void BrowserOnLoaded(object sender, RoutedEventArgs routedEventArgs)
+        {
+            var browser = sender as IWpfWebBrowser;
+            browser.RegisterScript("Resources\\Scripts\\notifications-polyfill.js");
         }
 
 

@@ -20,7 +20,7 @@ namespace FacebookMessenger
             {
                 var pop = new CefPopupWindow(_settings, targetUrl);
                 pop.Show();
-                newBrowser = pop.Browser;
+                newBrowser = browserControl;
                 
                 return false;
             }
