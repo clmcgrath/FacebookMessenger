@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookMessenger", "FacebookMessenger\FacebookMessenger.csproj", "{2BB17DAF-A5EC-4F55-9411-7CCB5F4FEA1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookMessenger.Install", "FacebookMessenger.Install\FacebookMessenger.Install.csproj", "{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,14 +21,6 @@ Global
 		{2BB17DAF-A5EC-4F55-9411-7CCB5F4FEA1A}.Release|x64.Build.0 = Release|x64
 		{2BB17DAF-A5EC-4F55-9411-7CCB5F4FEA1A}.Release|x86.ActiveCfg = Release|x86
 		{2BB17DAF-A5EC-4F55-9411-7CCB5F4FEA1A}.Release|x86.Build.0 = Release|x86
-		{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}.Debug|x64.Build.0 = Debug|Any CPU
-		{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}.Debug|x86.Build.0 = Debug|Any CPU
-		{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}.Release|x64.ActiveCfg = Release|Any CPU
-		{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}.Release|x64.Build.0 = Release|Any CPU
-		{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}.Release|x86.ActiveCfg = Release|Any CPU
-		{E08EFA3E-BD5B-4E25-A345-E4F64364E2C1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
