@@ -14,7 +14,7 @@
         >
     
     <Grid>
-        <cef:ChromiumWebBrowser Grid.Column="0"  Height="1000" x:Name="Browser" Address="https://www.messenger.com/login" ></cef:ChromiumWebBrowser>
+        <cef:ChromiumWebBrowser Grid.Column="0"  Height="1000" x:Name="Browser" Address="{Binding Path=Settings}" ></cef:ChromiumWebBrowser>
     </Grid>
     <metro:MetroWindow.TitleTemplate>
         <DataTemplate>

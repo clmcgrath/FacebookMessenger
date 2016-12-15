@@ -7,6 +7,8 @@ namespace FacebookMessenger
         bool CloseToTray { get; set; }
         bool EnableTrayIcon { get; set; }
         string MessageNotification { get; set; }
+        string MessengerBaseUrl { get; set; }
         bool StartMinimized { get; set; }
+
     }
 }

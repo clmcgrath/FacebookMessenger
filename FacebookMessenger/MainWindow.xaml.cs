@@ -14,15 +14,16 @@ namespace FacebookMessenger
     /// </summary>
     public partial class MainWindow 
     {
-      
+        string MessengerBaseUrl { get; set; }
         public MainWindow(ISettings settings)
         {
             InitializeComponent();
+            MessengerBaseUrl = settings.MessengerBaseUrl;
             Browser.DownloadHandler = new Downloader();
             Browser.MenuHandler = new DeveloperContextMenuHandler(settings);
-            //Browser.Address = "https://www.mesenger.com/login";
+            //Browser.Address = $"{settings.MessengerBaseUrl}/login";
             Browser.LifeSpanHandler = new LifespanHandler(settings);
-            Browser.Load("http://www.messenger.com/t/");
+            Browser.Load($"{settings.MessengerBaseUrl}/t/");
 
            // Browser.SetZoomLevel(100);
             SizeChanged += OnSizeChanged;
