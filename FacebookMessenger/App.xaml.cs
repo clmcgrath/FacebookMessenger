@@ -96,6 +96,7 @@ namespace FacebookMessenger
                 CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "dp-facebook-messenger", "CEF_Cache"),
                 PersistSessionCookies = true,
                 PersistUserPreferences = true,
+                LogFile = @"C:\Logs\FbMessenger.txt",
                 UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36"
 
             };

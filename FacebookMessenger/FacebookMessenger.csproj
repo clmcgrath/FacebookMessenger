@@ -263,7 +263,6 @@
     <Resource Include="Resources\messenger.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="FodyWeavers.xml" />
     <Content Include="Resources\Scripts\notifications-polyfill.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
