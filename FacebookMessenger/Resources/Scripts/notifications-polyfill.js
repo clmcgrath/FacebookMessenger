@@ -52,12 +52,13 @@ if (!window.Notification && window.webkitNotifications) {
                     }
                     notifications_cache[options.tag].push(notification);
                 }
-
+	   	window.Notification.requestPermission = function (cb) {
+			return window.webkitNotifications.requestPermission(cb);
+	    	}
+		    
                 return notification;
             }
-            window.Notification.requestPermission = function (cb) {
-                return window.webkitNotifications.requestPermission(cb);
-            }
+
         })()
     }
 }
